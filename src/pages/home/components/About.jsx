@@ -1,4 +1,5 @@
 import React from 'react';
+import RoundedButton from '../../../components/Button';
 
 export default function About() {
     return (
@@ -56,9 +57,7 @@ export default function About() {
 
                 {/* Call-to-action */}
                 <div className="flex mt-8 justify-center">
-                    <button className="bg-black text-white px-10 py-6 rounded-full font-medium hover:bg-gray-800 transition-colors duration-300">
-                        More about me
-                    </button>
+                    <RoundedButton>More about me</RoundedButton>
                 </div>
             </div>
         </div>
