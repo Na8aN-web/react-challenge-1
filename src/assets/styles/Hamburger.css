@@ -1,0 +1,50 @@
+.hamburger-button {
+    width: 40px;
+    height: 30px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.hamburger-button .bar {
+    height: 4px;
+    background-color: black;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+    transform-origin: center;
+}
+
+.top-bar,
+.middle-bar,
+.bottom-bar {
+    width: 100%;
+}
+
+.hamburger-button.open .top-bar {
+    transform: translateY(13px) rotate(45deg);
+}
+
+.hamburger-button.open .middle-bar {
+    opacity: 0;
+    transform: scaleX(0);
+}
+
+.hamburger-button.open .bottom-bar {
+    transform: translateY(-13px) rotate(-45deg);
+}
+/* Hamburger.css */
+html, body {
+  overflow: hidden;
+  scrollbar-width: none; /* Firefox */
+}
+
+html::-webkit-scrollbar, 
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
